@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript</h2>
+    <h3>Js Variables and Type Coercion</h3>
+    <p id="output"></p>
+    <script>
+        let a = 10
+        b = "20"
+        let result = a + b
+        console.log(result)
+        document.getElementById("output").innerHTML = result
+
+        let num = Number(prompt("Enter a number:"))
+        if (num > 0){
+            alert("The number is positive.")
+        } else if (num < 0){
+            alert("The number is negative.")
+        } else {
+            alert("The number is zero.")
+        }
+
+        const student = {
+            name: "Anil",
+            rollno: 12345,
+            marks: 85
+        }
+
+        console.log(student.name)
+        console.log(student.rollno)
+        console.log(student.marks)
+
+        let arr = [10, 20, 30, 40, 50]
+        for (let i = 0; i < arr.length; i++){
+            console.log(arr[i])
+        }
+        let evenCount = 0
+        for (i = 0; i < arr.length; i++){
+            
+            if (arr[i] % 2 == 0){
+                evenCount++
+            } else {    
+                // odd number
+            }
+        }
+        console.log("Even numbers found:" + evenCount)
+        console.log("Odd numbers found: " + arr.length - evenCount)
+    </script>
+</body>
+</html>
