@@ -1,0 +1,71 @@
+/* To-Do Specific Styles */
+
+.todo-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.task-list li:hover {
+  background: #e9ecef;
+}
+
+.task-list li span {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.task-list li button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.task-list li button:hover {
+  background: #c82333;
+}
